@@ -1,0 +1,9 @@
+'administer addressfields':
+  title: 'Administer addressfields'
+  description: 'Allows users to create, update, and delete addressfields.'
+  'restrict access': TRUE
+
+'administer addressfield types':
+  title: 'Administer addressfield types'
+  description: 'Allows users to create, update, and delete addressfield types.'
+  'restrict access': TRUE

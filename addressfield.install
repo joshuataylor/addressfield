@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function commerce_addressfield_install() {
+
+}
+
+/**
+ * Implements hook_requirements().
+ *
+ * Check that the Commerce Guys' Libraries have been installed.
+ */
+function commerce_addressfield_requirements($phase) {
+  $requirements = array();
+
+  if ($phase == 'install') {
+
+  }
+
+  return $requirements;
+}

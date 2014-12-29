@@ -38,9 +38,6 @@ addressfield.address_format.*:
     uppercaseFields:
       type: array
       label: 'Uppercase Fields'
-    status:
-      label: Status
-      type: boolean
     administrativeAreaType:
       type: string
       label: 'Administrative area type'
@@ -59,3 +56,6 @@ addressfield.address_format.*:
     postalCodePrefix:
       type: string
       label: 'Postal code prefix'
+    status:
+      label: Status
+      type: boolean

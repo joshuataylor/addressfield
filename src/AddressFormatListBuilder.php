@@ -7,6 +7,7 @@
 
 namespace Drupal\addressfield;
 
+use Drupal\Component\Utility\SafeMarkup;
 use Drupal\Core\Config\Entity\ConfigEntityListBuilder;
 use Drupal\Core\Entity\EntityInterface;
 
@@ -33,7 +34,7 @@ class AddressFormatListBuilder extends ConfigEntityListBuilder {
    */
   public function buildRow(EntityInterface $entity) {
     $row['countryCode'] = $entity->id();
-    $row['format'] = $entity->getFormat();
+    $row['format']['data'] = SafeMarkup::set(str_replace("\n", '<br />', $entity->getFormat()));
     $row['status'] = $entity->status() ? t('Enabled') : t('Disabled');
     return $row + parent::buildRow($entity);
   }

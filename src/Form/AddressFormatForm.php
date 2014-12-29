@@ -132,7 +132,6 @@ class AddressFormatForm extends EntityForm {
       '#title' => $this->t('Postal code pattern'),
       '#description' => $this->t('Defines the postal code pattern that all postal codes must uphold.'),
       '#default_value' => $address_format->getPostalCodePattern(),
-      '#size' => 10,
     );
 
     $form['postalCodePrefix'] = array(
